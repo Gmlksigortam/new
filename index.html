@@ -3,6 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- İçerik Güvenlik Politikası (CSP) -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data:;
+        font-src 'self';
+        connect-src 'self';
+        frame-src 'none';
+        object-src 'none';
+    ">
+
+    <!-- XSS Koruması -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+    <!-- Tıklama Korsanlığı Koruması -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <!-- İçerik Tipi Denetimi -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
     <title>GemlikSigorta.net - Doğru Sigorta Çözümünü Bulun</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -36,32 +58,32 @@
         <section class="info-services-area container">
             <div class="info-cards-flex">
                 <div class="info-card">
-                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=512&q=80" alt="Sigorta Danışmanlığı" width="512" height="512">
+                    <img src="7.png" width="512" height="512">
                     <h3>Sigorta Çeşitlerinize Özel En Doğru Acente Yanınızda</h3>
                     <p>Her sigorta türünün farklı uzmanlık alanları vardır. İster kasko ister sağlık sigortası, ister seyahat ya da konut sigortası olsun, ihtiyacınıza göre doğru acenteye ulaşmanız bizim önceliğimiz.</p>
                 </div>
                 <div class="info-card">
-                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=512&q=80" alt="Sigorta Seçimi" width="512" height="512">
+                    <img src="8.png" alt="Sigorta Seçimi" width="512" height="512">
                     <h3>Size En Uygun Sigorta Çözümünü Bulun</h3>
                     <p>İster bireysel ister kurumsal, her tür sigorta için doğru acenteyi seçin, en avantajlı ve kapsamlı hizmeti alın. Uzman ekiplerle çalışmanın farkını yaşayın.</p>
                 </div>
                 <div class="info-card">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=512&q=80" alt="Sigorta Destek" width="512" height="512">
+                    <img src="9.png" alt="Sigorta Destek" width="512" height="512">
                     <h3>Her Sigorta İçin Doğru Acente Desteği</h3>
                     <p>Araç, sağlık, hayat, konut ve daha birçok sigorta türünde size en uygun acenteyi buluyoruz. En iyi teklifleri almak için bizimle iletişime geçin.</p>
                 </div>
                 <div class="info-card">
-                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=512&q=80" alt="Sigorta Rehberi" width="512" height="512">
+                    <img src="10.png" alt="Sigorta Rehberi" width="512" height="512">
                     <h3>Sigorta Türüne Göre Doğru Acente Rehberi</h3>
                     <p>Sigorta türünüzü seçin, uzman acentelerden teklif alın. Her ihtiyaca uygun acente rehberimizle güvenle sigortanızı yaptırın.</p>
                 </div>
                 <div class="info-card">
-                    <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=512&q=80" alt="Profesyonel Destek" width="512" height="512">
+                    <img src="11.png" alt="Profesyonel Destek" width="512" height="512">
                     <h3>Sigorta Seçiminizde Profesyonel Destek</h3>
                     <p>Sigorta poliçenizi seçerken uzmanlarımızdan destek alın, en doğru kararı birlikte verin. Profesyonel danışmanlık ile yanınızdayız.</p>
                 </div>
                 <div class="info-card">
-                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=512&q=80" alt="Acentelerle Tanışın" width="512" height="512">
+                    <img src="12.png" alt="Acentelerle Tanışın" width="512" height="512">
                     <h3>Sigorta İhtiyacınıza Özel Acentelerle Tanışın</h3>
                     <p>İhtiyacınıza en uygun acenteleri kolayca bulun, hızlıca iletişime geçin. Güvenilir ve deneyimli acentelerle sigorta işlemleriniz çok daha kolay.</p>
                 </div>
@@ -70,7 +92,66 @@
             <div class="sigorta-turleri-section">
                 <h2 class="sigorta-turleri-baslik">Sigorta Türleri</h2>
                 <div class="services">
-                    <!-- ...sigorta türleri kartlarınız burada kalacak... -->
+                    <!-- Sigorta Türleri Kartları -->
+                    <div class="service-card">
+                        <!-- Kasko: Araba ikonu -->
+                        <div class="icon-svg">
+                            <svg width="60" height="60" viewBox="0 0 64 64" fill="none">
+                                <rect x="8" y="32" width="48" height="16" rx="4" fill="#1976d2"/>
+                                <rect x="16" y="24" width="32" height="12" rx="3" fill="#90caf9"/>
+                                <circle cx="16" cy="52" r="6" fill="#424242"/>
+                                <circle cx="48" cy="52" r="6" fill="#424242"/>
+                            </svg>
+                        </div>
+                        <h3>Kasko Sigortası</h3>
+                        <p>Aracınızı her türlü riske karşı güvence altına alın.</p>
+                    </div>
+                    <div class="service-card">
+                        <!-- Sağlık: Kalp ikonu -->
+                        <div class="icon-svg">
+                            <svg width="60" height="60" viewBox="0 0 64 64" fill="none">
+                                <path d="M32 56s-20-12.36-20-28A12 12 0 0132 16a12 12 0 0120 12c0 15.64-20 28-20 28z" fill="#e53935"/>
+                                <polyline points="20 36 28 44 44 28" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Sağlık Sigortası</h3>
+                        <p>Kendinizi ve ailenizi sağlık risklerine karşı koruyun.</p>
+                    </div>
+                    <div class="service-card">
+                        <!-- Konut: Ev ikonu -->
+                        <div class="icon-svg">
+                            <svg width="60" height="60" viewBox="0 0 64 64" fill="none">
+                                <polygon points="32,12 8,32 12,32 12,52 52,52 52,32 56,32" fill="#ffb300"/>
+                                <rect x="24" y="36" width="16" height="16" fill="#fffde7"/>
+                                <rect x="28" y="44" width="8" height="8" fill="#90caf9"/>
+                            </svg>
+                        </div>
+                        <h3>Konut Sigortası</h3>
+                        <p>Evinizi yangın, hırsızlık ve doğal afetlere karşı sigortalayın.</p>
+                    </div>
+                    <div class="service-card">
+                        <!-- Seyahat: Uçak ikonu -->
+                        <div class="icon-svg">
+                            <svg width="60" height="60" viewBox="0 0 64 64" fill="none">
+                                <path d="M8 56l48-24-48-24v12l32 12-32 12v12z" fill="#43a047"/>
+                                <rect x="44" y="28" width="8" height="8" rx="2" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <h3>Seyahat Sigortası</h3>
+                        <p>Yurtiçi ve yurtdışı seyahatlerinizde güvenle yolculuk yapın.</p>
+                    </div>
+                    <div class="service-card">
+                        <!-- Hayat: Kalkan ve insan ikonu -->
+                        <div class="icon-svg">
+                            <svg width="60" height="60" viewBox="0 0 64 64" fill="none">
+                                <path d="M32 8l20 8v14c0 14-20 22-20 22S12 44 12 30V16l20-8z" fill="#3949ab"/>
+                                <circle cx="32" cy="32" r="7" fill="#fff"/>
+                                <rect x="27" y="39" width="10" height="6" rx="3" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <h3>Hayat Sigortası</h3>
+                        <p>Siz ve sevdiklerinizin geleceğini güvence altına alın.</p>
+                    </div>
                 </div>
             </div>
         </section>
