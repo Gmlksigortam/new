@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güven Sigorta Acentesi</title>
+    <link rel="stylesheet" href="css.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <!-- Üst Menü -->
+    <header>
+        <div class="container">
+            <h1>Güven Sigorta</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Ana Sayfa</a></li>
+                    <li><a href="#" onclick="showSection('hakkimizda')">Hakkımızda</a></li>
+                    <li><a href="#" onclick="showSection('iletisim')">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Ana Sayfa (Hero + Hizmetler) -->
+    <main id="home">
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Sigorta görseli">
+            <div class="hero-text">
+                <h2>Hayatınızı Güvence Altına Alın</h2>
+                <p>En uygun fiyatlarla, en kapsamlı sigorta çözümleri.</p>
+            </div>
+        </section>
+        <section id="hizmetler" class="container">
+            <h2>Hizmetlerimiz</h2>
+            <div class="services">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Kasko Sigortası">
+                    <h3>Kasko Sigortası</h3>
+                    <p>Aracınızı her türlü riske karşı güvence altına alın.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Sağlık Sigortası">
+                    <h3>Sağlık Sigortası</h3>
+                    <p>Kendinizi ve ailenizi sağlık risklerine karşı koruyun.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Konut Sigortası">
+                    <h3>Konut Sigortası</h3>
+                    <p>Evinizi yangın, hırsızlık ve doğal afetlere karşı sigortalayın.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Hakkımızda (Başlangıçta gizli) -->
+    <section id="hakkimizda" class="container" style="display:none;">
+        <h2>Hakkımızda</h2>
+        <p>
+            Güven Sigorta olarak 20 yılı aşkın süredir müşterilerimize en iyi sigorta çözümlerini sunuyoruz.
+            Müşteri memnuniyetini ön planda tutarak, hızlı ve güvenilir hizmet sağlıyoruz.
+        </p>
+    </section>
+
+    <!-- İletişim (Başlangıçta gizli) -->
+    <section id="iletisim" class="container" style="display:none;">
+        <h2>İletişim</h2>
+        <form>
+            <label for="ad">Adınız:</label>
+            <input type="text" id="ad" name="ad" required>
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mesaj">Mesajınız:</label>
+            <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <!-- Alt Bilgi -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Güven Sigorta Acentesi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
